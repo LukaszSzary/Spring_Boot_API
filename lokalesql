@@ -1,0 +1,34 @@
+--
+-- File generated with SQLiteStudio v3.4.4 on pon. lis 20 17:40:23 2023
+--
+-- Text encoding used: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: Cars
+CREATE TABLE IF NOT EXISTS "Cars" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Cars" PRIMARY KEY,
+    "Brand" TEXT NULL,
+    "Model" TEXT NULL,
+    "DoorsNumber" INTEGER NOT NULL,
+    "LuggageCapacity" INTEGER NOT NULL,
+    "EngineCapacity" INTEGER NOT NULL,
+    "FuelType" INTEGER NOT NULL,
+    "ProductionDate" TEXT NOT NULL,
+    "CarFuelConsumption" REAL NOT NULL,
+    "BodyType" INTEGER NOT NULL
+);
+INSERT INTO Cars (Id, Brand, Model, DoorsNumber, LuggageCapacity, EngineCapacity, FuelType, ProductionDate, CarFuelConsumption, BodyType) VALUES ('10D7844D-94E8-42FB-889A-528CDD8D16EE', 'Seat', 'Leon IV', 5, 800, 1395, 1, '2023-05-19 07:39:22.8536787', 6.8, 0);
+INSERT INTO Cars (Id, Brand, Model, DoorsNumber, LuggageCapacity, EngineCapacity, FuelType, ProductionDate, CarFuelConsumption, BodyType) VALUES ('1993D559-96A7-437B-B36B-11B204D2B3B0', 'Renault', 'Clio II', 5, 300, 1149, 0, '2005-07-19 07:39:22.8536518', 7.2, 0);
+INSERT INTO Cars (Id, Brand, Model, DoorsNumber, LuggageCapacity, EngineCapacity, FuelType, ProductionDate, CarFuelConsumption, BodyType) VALUES ('45C65B37-6BD1-45B6-AA47-5486F4281252', 'Toyota', 'Corolla XII', 5, 1000, 1197, 2, '2022-07-19 07:39:22.8536782', 9.5, 2);
+INSERT INTO Cars (Id, Brand, Model, DoorsNumber, LuggageCapacity, EngineCapacity, FuelType, ProductionDate, CarFuelConsumption, BodyType) VALUES ('827F2094-C1D7-4DE7-AB63-C0F667B9E08E', 'Mazda', 'MX-5', 2, 130, 1496, 0, '2018-07-19 07:39:22.8536763', 10.1, 4);
+INSERT INTO Cars (Id, Brand, Model, DoorsNumber, LuggageCapacity, EngineCapacity, FuelType, ProductionDate, CarFuelConsumption, BodyType) VALUES ('83872176-16ED-4C5B-87EB-472D36D8423C', 'Fiat', 'Tipo II', 5, 450, 1368, 2, '2015-07-19 07:39:22.8536791', 7.4, 0);
+INSERT INTO Cars (Id, Brand, Model, DoorsNumber, LuggageCapacity, EngineCapacity, FuelType, ProductionDate, CarFuelConsumption, BodyType) VALUES ('8734B9A4-D7EC-40E9-AFD0-32099FD6D9F5', 'Volvo', 'XC60', 5, 600, 1969, 2, '2020-07-19 07:39:22.8536756', 10.0, 3);
+INSERT INTO Cars (Id, Brand, Model, DoorsNumber, LuggageCapacity, EngineCapacity, FuelType, ProductionDate, CarFuelConsumption, BodyType) VALUES ('D7B40839-6368-45DD-A0AB-E5D6AB5F273C', 'Audi', 'A4', 5, 685, 1781, 0, '2001-07-19 07:39:22.8536785', 8.2, 1);
+INSERT INTO Cars (Id, Brand, Model, DoorsNumber, LuggageCapacity, EngineCapacity, FuelType, ProductionDate, CarFuelConsumption, BodyType) VALUES ('E2AFCE02-FB16-46A2-9755-558CA0A81F16', 'Mazda', 'CX60', 5, 570, 2488, 1, '2023-06-19 07:39:22.8533739', 18.1, 3);
+INSERT INTO Cars (Id, Brand, Model, DoorsNumber, LuggageCapacity, EngineCapacity, FuelType, ProductionDate, CarFuelConsumption, BodyType) VALUES ('EA82ADC4-7B70-4190-93A6-AB1576DCACDC', 'Skoda', 'Octavia', 5, 900, 1489, 3, '2013-07-19 07:39:22.8536797', 9.9, 2);
+INSERT INTO Cars (Id, Brand, Model, DoorsNumber, LuggageCapacity, EngineCapacity, FuelType, ProductionDate, CarFuelConsumption, BodyType) VALUES ('EDB46649-C862-4E94-AD24-B00EAB86B417', 'Kia', 'Ceed II', 5, 400, 1591, 0, '2015-07-19 07:39:22.853676', 7.4, 0);
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;
